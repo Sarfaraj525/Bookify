@@ -1,0 +1,326 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles/globals.css */
+@import url("https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap");
+
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.timeline-component {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+}
+
+.css-zza0ns-MuiBadge-badge {
+  background-color: #364957;
+}
+
+.timeline-item {
+  border: none;
+  /* Remove any border */
+}
+
+.swiper-button-prev {
+  color: black !important;
+}
+
+.swiper-button-prev::after {
+  /* background: whitesmoke; */
+  box-shadow: inset;
+
+  font-size: 18px !important;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.swiper-button-next {
+  color: black !important;
+}
+
+.swiper-button-next::after {
+  /* background: whitesmoke; */
+  font-size: 18px !important;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+/* Add this to your style.module.css */
+.customSelect:focus {
+  border-color: #737373 !important;
+  /* This will ensure the border is red */
+  outline: none;
+  /* Remove default outline */
+  box-shadow: 0 0 0 0.2px #737373;
+}
+
+.btn_1 {
+  color: #ffffff;
+  background-color: #364957;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  padding: 0.55rem 0.6rem;
+  outline: none;
+}
+
+.btn_1:focus {
+  box-shadow: 0 0 0 4px #b7b7b7;
+}
+
+.btn_2 {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  /* Rounded corners */
+  font-size: 0.875rem;
+  /* Small text */
+  padding: 0.5rem 0.6rem;
+  outline: none;
+}
+
+.btn_2:focus {
+  box-shadow: 0 0 0 4px #b7b7b7;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+
+  /* Dark mode colors */
+
+  .dark {
+    --background: 0 0% 0%;
+    /* Black background */
+    --foreground: 0 0% 100%;
+    /* White text */
+    --card: 0 0% 10%;
+    /* Darker cards */
+    --card-foreground: 0 0% 98%;
+    /* White text for cards */
+    --popover: 0 0% 10%;
+    /* Darker popovers */
+    --popover-foreground: 0 0% 98%;
+    /* White text for popovers */
+    --primary: 0 0% 98%;
+    /* White for primary elements */
+    --primary-foreground: 0 0% 9%;
+    /* Black text for primary elements */
+    --secondary: 0 0% 14.9%;
+    /* Darker background for secondary elements */
+    --secondary-foreground: 0 0% 98%;
+    /* White text for secondary elements */
+    --muted: 0 0% 14.9%;
+    /* Dark muted background */
+    --muted-foreground: 0 0% 63.9%;
+    /* Light muted text */
+    --accent: 0 0% 14.9%;
+    /* Darker accent */
+    --accent-foreground: 0 0% 98%;
+    /* White text for accent */
+    --destructive: 0 62.8% 30.6%;
+    /* Darker destructive elements */
+    --destructive-foreground: 0 0% 98%;
+    /* White text for destructive elements */
+    --border: 0 0% 20%;
+    /* Darker borders */
+    --input: 0 0% 14.9%;
+    /* Darker input fields */
+    --ring: 0 0% 98%;
+    /* Lighter ring */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+
+  .custom-audio::-webkit-media-controls-play-button,
+  .custom-audio::-webkit-media-controls-pause-button {
+    background-color: #fff;
+    /* Tailwind's bg-emerald-500 */
+    border-radius: 50%;
+    /* Makes the button circular */
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+    /* Inverts colors for better contrast */
+  }
+
+  .custom-audio::-webkit-media-controls-panel {
+    background-color: #ffffff;
+  }
+
+  .custom-audio::-webkit-media-controls-timeline {
+    background-color: none;
+  }
+
+  .timeline-component,
+  .timeline-item {
+    background-color: var(--card);
+    /* Darker background */
+    color: var(--card-foreground);
+    /* White text */
+  }
+}
+
+.css-ihowzd-MuiBadge-badge {
+  background: #364957 !important;
+}
+
+.css-1nd3ur8-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+  background-color: #364957 !important;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm) {
+  background-color: #364957 !important;
+  color: #fff !important;
+}
+
+div:where(.swal2-container) div:where(.swal2-popup) {
+  background: #f3f2ed !important;
+  color: black !important;
+}
+
+.custom-confirm-button {
+  background-color: #364957 !important;
+  color: white !important;
+  border: none !important;
+}
+
+/* Customize the scrollbar */
+.overflow-y-scroll::-webkit-scrollbar {
+  margin-top: 5px;
+  width: 8px;
+  /* width of the scrollbar */
+}
+
+/* Track */
+.overflow-y-scroll::-webkit-scrollbar-track {
+  background: #364957 !important;
+  /* background of the track */
+  border-radius: 10px !important;
+  /* optional rounded corners */
+}
+
+/* Handle */
+.overflow-y-scroll::-webkit-scrollbar-thumb {
+  background: #000000 !important;
+  border-radius: 10px !important;
+}
+
+.overflow-y-scroll::-webkit-scrollbar-thumb:hover {
+  background: #364957 !important;
+}
+
+.overflow-y-scroll {
+  scrollbar-color: #ffffff #364957cc !important;
+  scrollbar-width: thin;
+}
+
+.border {
+  border-width: 2px;
+}
+
+.border-input {
+  border-color: #364957;
+}
+
+.css-1ejouah-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: black !important;
+}
+
+.css-1qltlow-MuiTabs-indicator {
+  background-color: black !important;
+}
+
+.css-19kzrtu {
+  padding: 3px !important;
+}
+
+input[type="file"]::file-selector-button {
+  background-color: #364957;
+  color: white;
+}
+
+.menu-container {
+  display: flex;
+  /* Ensure the icons are in a row */
+  align-items: center;
+  /* Align items vertically centered */
+}
+
+.profile-icon,
+.theme-icon {
+  margin-left: 10px;
+  /* Add space between menu and icons */
+}
+
+.bg-\[\#364957\] {
+  --tw-bg-opacity: 1;
+  background-color: #364957 !important;
+}
+
+.css-j60oyd.Mui-selected {
+  color: #000000 !important;
+}
+.css-jkmkwa {
+  background-color: #364957 !important;
+}
+.css-th4l46.Mui-selected {
+  color: white I !important;
+}
+.css-j60oyd.Mui-selected {
+  color: white I !important;
+}
+
+/* 
+[data-theme="dark"] .css-j60oyd.Mui-selected {
+  color: white !important;
+} */
+
+
+
+
+body.modal-open {
+  background-color: #1a1a1a !important; /* or any dark color you prefer */
+  transition: background-color 0.3s ease;
+}
