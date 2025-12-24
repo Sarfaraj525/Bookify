@@ -74,12 +74,12 @@ Security: CSRF/XSS protection, input validation
 1. **Clone the repositories**
    ```bash
    # Frontend
-   git clone https://github.com/sumon-ray/Bookify.git
+   git clone https://github.com/Sarfaraj525/Bookify
    cd Bookify
    npm install
    
    # Backend
-   git clone https://github.com/sumon-ray/Bookify-Server.git
+   git clone https://github.com/Sarfaraj525/Bookify-Server
    cd Bookify-Server
    npm install
    ```
@@ -417,10 +417,10 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## 👨‍💻 Developer
 
-**Sumon Ray**
-- Portfolio: [Your Portfolio](https://sumon-ray.vercel.app/)
-- LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/sumon60/)
-- Email: sumonray146371@gmail.com
+**Sarfaraj Nawaz Chowdhury**
+- Portfolio: [Your Portfolio](https://sarfaraj-nawaz-chowdhury.netlify.app/)
+- LinkedIn: [Your LinkedIn](www.linkedin.com/in/sarfaraj-nawaz-chowdhury)
+- Email: sarfarajeee525@gmail.com
 
 ## 🙏 Acknowledgments
 
