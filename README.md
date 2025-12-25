@@ -1,8 +1,8 @@
 # 📚 Bookify - Book Exchange Platform
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://bookify-mocha.vercel.app/)
-[![Frontend](https://img.shields.io/badge/Frontend-Repository-blue)](https://github.com/sumon-ray/Bookify)
-[![Backend](https://img.shields.io/badge/Backend-Repository-orange)](https://github.com/sumon-ray/Bookify-Server)
+[![Frontend](https://img.shields.io/badge/Frontend-Repository-blue)](https://github.com/Sarfaraj525/Bookify)
+[![Backend](https://img.shields.io/badge/Backend-Repository-orange)](https://github.com/Sarfaraj525/Bookify-Server)
 [![Next.js](https://img.shields.io/badge/Next.js-13+-black)](https://nextjs.org/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-Database-green)](https://mongodb.com/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-blue)](https://tailwindcss.com/)
