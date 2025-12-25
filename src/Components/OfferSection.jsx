@@ -2,45 +2,50 @@ import React from "react";
 import { FaShippingFast, FaTag } from "react-icons/fa";
 import { RiSecurePaymentLine } from "react-icons/ri";
 
-export default function OfferSection() {
+const offers = [
+  {
+    title: "Free Shipping",
+    subtitle: "Order over $100",
+    icon: FaShippingFast,
+  },
+  {
+    title: "Secure Payment",
+    subtitle: "100% secure payment",
+    icon: RiSecurePaymentLine,
+  },
+  {
+    title: "Best Prices",
+    subtitle: "Guaranteed price",
+    icon: FaTag,
+  },
+];
+
+const OfferSection = () => {
   return (
-    <section className=" bg-[#eeebe4] text-gray-100 ">
-      <div className="container grid grid-cols-1 gap-6 mx-auto sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3">
-        <div className="flex p-4 space-x-4 rounded-lg md:space-x-2  text-gray-400">
-          <div className="flex justify-center p-2 align-middle rounded-lg sm:p-4 text-3xl">
-            <FaShippingFast />
+    <section className="bg-[#eeebe4] dark:bg-gray-900 py-8">
+      <div className="container mx-auto grid grid-cols-1 gap-6 px-6 sm:grid-cols-2 md:grid-cols-3">
+        {offers.map(({ title, subtitle, icon: Icon }) => (
+          <div
+            key={title}
+            className="group flex items-center gap-4 rounded-lg bg-white dark:bg-gray-800 p-5 shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-md"
+          >
+            <div className="flex items-center justify-center rounded-full bg-[#eeebe4] dark:bg-gray-700 p-3 text-3xl text-[#374956] transition-colors duration-300 group-hover:text-black dark:group-hover:text-white">
+              <Icon />
+            </div>
+
+            <div>
+              <p className="text-lg font-semibold uppercase text-gray-900 dark:text-white">
+                {title}
+              </p>
+              <p className="capitalize text-gray-500 dark:text-gray-400">
+                {subtitle}
+              </p>
+            </div>
           </div>
-          <div className="flex flex-col justify-center align-middle">
-            <p className="text-lg font-semibold leading-none uppercase text-black">
-              Free Shipping
-            </p>
-            <p className="capitalize">Order over $100</p>
-          </div>
-        </div>
-        <div className="flex p-4 space-x-4 rounded-lg md:space-x-2  text-gray-400">
-          <div className="flex justify-center p-2 align-middle rounded-lg sm:p-4 text-3xl">
-            <RiSecurePaymentLine />
-          </div>
-          <div className="flex flex-col justify-center align-middle">
-            <p className="text-lg font-semibold leading-none uppercase text-black">
-              Security Payment
-            </p>
-            <p className="capitalize">100% Secure Payment</p>
-          </div>
-        </div>
-        <div className="flex p-4 space-x-4 rounded-lg md:space-x-2  text-gray-400">
-          <div className="flex justify-center p-2 align-middle rounded-lg sm:p-4 text-3xl">
-            <FaTag />
-          </div>
-          <div className="flex flex-col justify-center align-middle">
-            <p className="text-lg font-semibold leading-none uppercase text-black">
-              Best Prices
-            </p>
-            <p className="capitalize">Guaranteed Price</p>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );
-}
-   
+};
+
+export default OfferSection;
