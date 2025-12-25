@@ -45,7 +45,7 @@ const FaqSection = () => {
       icon: (
         <GiCardExchange
           size={32}
-          // style={{ color: "#4b5563", padding: "2px", borderRadius: "5px" }}
+          
           className="text-[#4b5563] dark:text-gray-300 p-[2px] rounded-[5px]   border-[#e1dddd] border-2 border-e-chart-3 dark:border-e-chart-2  "
         />
       ),
@@ -57,7 +57,7 @@ const FaqSection = () => {
       icon: (
         <FiShoppingCart
           size={32}
-          // style={{ color: "#4b5563", padding: "2px", borderRadius: "5px" }}
+          
           className="text-[#4b5563] dark:text-gray-300 p-[2px] rounded-[5px]   border-[#e1dddd] border-2 border-e-chart-3 dark:border-e-chart-2  "
         />
       ),
@@ -69,7 +69,7 @@ const FaqSection = () => {
       icon: (
         <FiSend
           size={32}
-          // style={{ color: "#4b5563", padding: "2px", borderRadius: "5px" }}
+          
           className="text-[#4b5563] dark:text-gray-300 p-[2px] rounded-[5px]   border-[#e1dddd] border-2 border-e-chart-3 dark:border-e-chart-2  "
         />
       ),
@@ -81,7 +81,7 @@ const FaqSection = () => {
       icon: (
         <FiRepeat
           size={32}
-          // style={{ color: "#4b5563", padding: "2px", borderRadius: "5px" }}
+          
           className="text-[#4b5563] dark:text-gray-300 p-[2px] rounded-[5px]   border-[#e1dddd] border-2 border-e-chart-3 dark:border-e-chart-2  "
         />
       ),
@@ -93,7 +93,7 @@ const FaqSection = () => {
       icon: (
         <FiDollarSign
           size={32}
-          // style={{ color: "#4b5563", padding: "2px", borderRadius: "5px" }}
+          
           className="text-[#4b5563] dark:text-gray-300 p-[2px] rounded-[5px]   border-[#e1dddd] border-2 border-e-chart-3 dark:border-e-chart-2  "
         />
       ),
@@ -105,7 +105,7 @@ const FaqSection = () => {
       icon: (
         <FiUserCheck
           size={32}
-          // style={{ color: "#4b5563", padding: "2px", borderRadius: "5px" }}
+         
           className="text-[#4b5563] dark:text-gray-300 p-[2px] rounded-[5px]   border-[#e1dddd] border-2 border-e-chart-3 dark:border-e-chart-2  "
         />
       ),
@@ -117,7 +117,7 @@ const FaqSection = () => {
       icon: (
         <FiHelpCircle
           size={32}
-          // style={{ color: "#4b5563", padding: "2px", borderRadius: "5px" }}
+          
           className="text-[#4b5563] dark:text-gray-300 p-[2px] rounded-[5px]   border-[#e1dddd] border-2 border-e-chart-3 dark:border-e-chart-2  "
         />
       ),
@@ -129,7 +129,7 @@ const FaqSection = () => {
       icon: (
         <FiMessageCircle
           size={32}
-          // style={{ color: "#4b5563", padding: "2px", borderRadius: "5px" }}
+          
           className="text-[#4b5563] dark:text-gray-300 p-[2px] rounded-[5px]   border-[#e1dddd] border-2 border-e-chart-3 dark:border-e-chart-2  "
         />
       ),
@@ -187,9 +187,7 @@ const FaqSection = () => {
         className="text-center"
       >
         <Heading heading="Frequently Asked Questions"></Heading>
-        {/* <p className="text-lg text-gray-600 mb-8 dark:text-gray-300 max-w-2xl mx-auto">
-          Find answers to common questions about our book exchange platform.
-        </p> */}
+        
       </motion.div>
 
       <div className="max-w-md mx-auto md:mb-8 relative">
@@ -197,7 +195,7 @@ const FaqSection = () => {
         <input
           type="text"
           placeholder="Search FAQs..."
-          // className="bg-[#EFEEE9] w-full border-0 focus:ring-[#EFEEE9] focus:outline-none focus:ring rounded-md py-2 px-4 pr-14"
+          
 
           className="w-full px-10 py-3 rounded-lg border-0 border-gray-300  focus:ring-[#EFEEE9] focus:outline-none focus:ring dark:bg-[#0A0A0C] dark:text-white shadow-sm"
           value={searchTerm}
