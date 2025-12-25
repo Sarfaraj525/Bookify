@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { HiSearch } from 'react-icons/hi'; // Flowbite uses Heroicons for icons
+import { HiSearch } from 'react-icons/hi'; 
 
 const SearchBook = ({ onSearch }) => {
     const [searchQuery, setSearchQuery] = useState('');
 
     const handleSearch = (e) => {
         setSearchQuery(e.target.value);
-        onSearch(e.target.value); // Pass the search query to the parent component
+        onSearch(e.target.value); 
     };
 
     return (

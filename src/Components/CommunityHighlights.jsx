@@ -70,8 +70,6 @@ const CommunityHighlights = () => {
         key={uuidv4()}
         className="rounded-lg shadow-lg p-6 w-64 sm:w-72 md:w-80 lg:w-96 bg-white dark:bg-[#272727A6] dark:text-gray-300 text-gray-800 mx-4 relative overflow-hidden"
       >
-        {/* <div className="absolute top-0 right-0 w-24 h-24 bg-gray-100 opacity-50 rounded-full -mr-12 -mt-4"></div>
-        <div className="absolute bottom-0 left-0 w-24 h-24 bg-gray-100 opacity-50 rounded-full -ml-12 -mb-4"></div> */}
 
         <div className="flex items-center mb-4">
           <div className="relative">
@@ -120,10 +118,6 @@ const CommunityHighlights = () => {
             </span>
           </div>
         </div>
-
-        {/* <button className="mt-4 w-full bg-green-500 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-green-600 transition-colors duration-200 shadow-md">
-          Request Exchange
-        </button> */}
 
         <div className="absolute top-2 right-2">
           <div className="text-xs font-semibold bg-[#364957] text-white  px-2 py-1 rounded-full shadow-sm">

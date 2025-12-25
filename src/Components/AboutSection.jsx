@@ -1,5 +1,4 @@
 import Image from 'next/image'
-// import img1 from "../assets/images/About/about1.jpg"
 import img1 from "../assets/images/About/about1.jpg"
 import img2 from "../assets/images/About/about2.jpg"
 import { Button } from 'flowbite-react';
