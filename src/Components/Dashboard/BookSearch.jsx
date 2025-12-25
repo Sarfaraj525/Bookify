@@ -2,13 +2,13 @@
 import React from 'react';
 import { IoIosSearch } from 'react-icons/io';
 import { MdOutlineKeyboardVoice } from 'react-icons/md';
-import { useSearchContext } from '../context/SearchProvider'; // Import the context
+import { useSearchContext } from '../context/SearchProvider'; 
 
 const BookSearch = () => {
-    const { setSearchQuery } = useSearchContext();  // Get the setSearchQuery function from context
+    const { setSearchQuery } = useSearchContext();  
 
     const handleSearch = (e) => {
-        setSearchQuery(e.target.value);  // Update the search query in context
+        setSearchQuery(e.target.value);  
     };
 
     return (
@@ -17,7 +17,7 @@ const BookSearch = () => {
                 className="bg-[#EFEEE9CC] border-0 rounded-md pr-16"
                 type="text"
                 placeholder="Search..."
-                onChange={handleSearch}  // Trigger search on input change
+                onChange={handleSearch}  
             />
             <div className="flex items-center gap-1 -ml-[65px]">
                 <IoIosSearch className="text-xl" />
